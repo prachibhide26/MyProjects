@@ -1,0 +1,177 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<!-- <div style="text-align:center"> -->
+  <!-- <h1> -->
+    <!-- Welcome to {{ title }}! -->
+  <!-- </h1> -->
+<!-- </div> -->
+
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span> 
+			</button>
+			<a class="navbar-brand" href="#"><img src = "../assets/img/brand.jpg"></a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li routerLinkActive="active"><a href="#" class = "home">Home</a></li>
+				<li routerLinkActive="active"><a routerLink = "/AddEmployee" class = "add">Add</a></li>
+				<li routerLinkActive="active"><a routerLink = "EditEmployee" class = "edit">Edit</a></li> 
+				<li routerLinkActive="active"><a routerLink = "Employees" class = "emp">Employees</a></li> 
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			<li><a href = "https://www.facebook.com" class = "fb-link"><i class = "fab fa-facebook-f"></i></a></li>
+			<li><a href = "www.twitter.com" class = "tw-link"><i class = "fab fa-twitter"></i></a></li>
+				<li><a href = "https://www.google.com" class = "g-link"><i class = "fab fa-google-plus-g "></i></a></li>
+			</ul>
+			<!-- <ul class="nav navbar-nav navbar-right"> -->
+				<!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li> -->
+				<!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Login</a></li> -->
+			<!-- </ul> -->
+		</div>
+	</div>
+</nav>
+
+<div class = "mid">
+<router-outlet></router-outlet>
+</div>
+
+<div class = "stars">
+	<!--Row 1-->
+	<div class = "row">
+		<div class = "col-sm-4">
+			<div><img src = "../assets/img/memp.png" style = "width:120px"></div>
+			<div class = "card">
+				<div class = "card-body">
+					<h4 class = "card-title">Lorum Ispum</h4>
+					<p><b>Designation : </b> UI Developer<br>
+					<b>Expert in :</b> CSS 3, Bootsrap 4<br>
+					<b>Experience : </b>5 years<br>
+					<b>About : </b>> Dedicated to his work<br>> Ambitious<br>>  Hard worker<br></p>
+				</div>
+			</div>
+		</div>
+		<div class = "col-sm-4">
+			<div class = "i"><img src = "../assets/img/femp.png" style = "width:120px"></div>
+			<div class = "card">
+				<div class = "card-body">
+					<h4 class = "card-title">Lorum Ispum</h4>
+					<p><b>Designation : </b> UI Developer<br>
+					<b>Expert in :</b> CSS 3, Bootsrap 4<br>
+					<b>Experience : </b>5 years<br>
+					<b>About : </b>> Dedicated to his work<br>> Ambitious<br>>  Hard worker<br></p>
+				</div>
+			</div>
+		</div>
+		<div class = "col-sm-4">
+			<div class = "i"><img src = "../assets/img/memp.png" style = "width:120px"></div>
+			<div class = "card">				
+				<h4 class = "card-title">Lorum Ispum</h4>
+				<p><b>Designation : </b> UI Developer<br>
+				<b>Expert in :</b> CSS 3, Bootsrap 4<br>
+				<b>Experience : </b>5 years<br>
+				<b>About : </b>> Dedicated to his work<br>> Ambitious<br>>  Hard worker</p>
+			</div>
+		</div>
+	</div>
+	<!--Row 2-->
+	<div class = "row">
+		<div class = "col-sm-2"></div>
+		<div class = "col-sm-4">
+			<div><img src = "../assets/img/femp.png" style = "width:120px"></div>
+			<div class = "card1">
+				<div class = "card-body">
+					<h4 class = "card-title">Lorum Ispum</h4>
+					<p><b>Designation : </b> UI Developer<br>
+					<b>Expert in :</b> CSS 3, Bootsrap 4<br>
+					<b>Experience : </b>5 years<br>
+					<b>About : </b>> Dedicated to his work<br>> Ambitious<br>>  Hard worker<br></p>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "col-sm-4">
+			<div class = "i"><img src = "../assets/img/femp.png" style = "width:120px"></div>
+			<div class = "card1">
+				<div class = "card-body">
+					<h4 class = "card-title">Lorum Ispum</h4>
+					<p><b>Designation : </b> UI Developer<br>
+					<b>Expert in :</b> CSS 3, Bootsrap 4<br>
+					<b>Experience : </b>5 years<br>
+					<b>About : </b>> Dedicated to his work<br>> Ambitious<br>>  Hard worker<br></p>
+				</div>
+			</div>
+		</div>
+		<div class = "col-sm-2"></div>
+	</div>
+</div>
+
+<footer class = "foot">
+	<!--This is the footer | footer-->
+	
+	<div class = "main offset-sm-1 col-sm-10 offset-sm-1 mt-5">
+			<div class = "container">
+				<div class = "row">
+					<div class = "col-sm-4 col1">
+						<h4>DROP US A LINE</h4>
+						<div class = "form-wrapper">
+							<div class = "form">
+								<div class = "form-cotent f">
+									<div class = "form-group col">Name<br><input type = "text" placeholder = "Name" style = "width:270px"></div>
+									<div class = "form-group col">Email<br><input type = "email" placeholder = "Email" style = "width:270px"></div>
+									<div class = "form-group col">Message<br><textarea type = "text" rows = "5" placeholder = "Message" style = "width:270px"></textarea></div>
+									<button class = "btn but" type = "submit">
+									<a href = "#"><p class = "dbl">Send Message <i class = "fa fa-angle-double-right"></i></p></a></button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class = "col-sm-4 col1">
+						<h4>OUR INFORMATION</h4>
+						<div class = "b1">
+							<p class = "addr">Address :</p>
+							<p class = "a1">503, 33 Milestone,<br>Near Bhumkar Chowk,<br>Wakad, Pune-411033</p>
+						</div>
+						<div class = "b1">
+							<p class = "addr">Office Contact :</p>
+							<p class = "a1">Tel : (050)285 2875<br>Mon-Fri 9.00am to 5.00pm<br>Saturday 10.00am to 4.00pm</p>
+						</div>
+						<div class = "b1">
+							<p class = "addr">Contact :</p>
+							<p class = "a1">Tel : (050)285 2875<br>Fax : (050)285 2875<br>Email : info@wtouch.com</p>
+						</div>
+					</div>
+					<div class = "col-sm-4 col1">
+						<h4>LINKS</h4>
+						<div class = "links">
+							<div class = "l1">
+								<a href = "#"><p class = "g1"><i class = "fa fa-caret-right"> Global Exclusive</i></p></a>
+							</div>
+							<div class = "l1">
+								<a href = "#"><p class = "g1"><i class = "fa fa-caret-right"> Global Exclusive</i></p></a>
+							</div>
+							<div class = "l1">
+								<a href = "#"><p class = "g1"><i class = "fa fa-caret-right"> Global Exclusive</i></p></a>
+							</div>
+						</div>
+						
+						<div class = "webmaster">
+							<h4>Webmaster</h4>
+							<p class = "a2">Lorem Ipsum is that it has a more.<br>Lorem Ipsum Consequator<br>mail@example.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</footer>

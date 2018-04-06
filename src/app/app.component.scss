@@ -1,0 +1,302 @@
+$col1 : #4d2600;
+$col2 : white;
+$col3 : #ff9966;
+$col4 : #f9ebf2;
+$col5 : transparent;
+$col6 : #ffff00;
+$col7 : #996633;
+$col8 : #eafafa;
+$col9 : #ccccff;
+$col10 : #003399;
+$col11 : #cc33ff;
+$col12 : #8080ff;
+$col13 : #004d4d;
+$col14 : #660022;
+$col15 : #3B5998; //For fb
+$col16 : #1DA1F2; //For twitter
+$col17 : #DB4437; //For g+
+$col18 : #ff6633;
+$col19 : black;
+
+.navbar
+{
+	margin-bottom : 0px;
+}
+.navbar-inverse
+{
+	background-image : url("../assets/img/navback.png");
+	.container-fluid
+	{
+		.navbar-header
+		{
+			height: 65px;
+			background-size : 100% 100%;
+			.navbar-brand
+			{
+				padding-top : 0px;
+				img
+				{
+					width : 65px;
+				}
+			}
+			img
+			{
+				width : 50px;
+				height :auto;
+				border-radius : 50%;
+				display : inline;
+				margin-left : 30px;
+			}
+		}
+		.collapse
+		{
+			.nav
+			{
+				li.active
+				{
+					a
+					{
+						color : $col19;
+						background-color : $col2;
+					}
+				}
+				li 
+				{
+					
+					.home
+					{
+						margin-top: 5px;
+						margin-left: 25px;
+						padding-bottom: 15px;
+						font-size : 25px;
+						color : white;
+					}
+					.add
+					{
+						margin-top: 5px;
+						margin-left: 25px;
+						font-size : 25px;
+						color : white;
+					}
+					/*.add:active
+					{
+						background-color : $col2;
+					}*/
+					.edit
+					{
+						margin-top: 5px;
+						margin-left: 25px;
+						font-size : 25px;
+						color : white;
+					}
+					.emp
+					{
+						margin-top: 5px;
+						margin-left: 25px;
+						font-size : 25px;
+						color : white;
+					}
+				}
+			}
+			.navbar-right
+			{
+				li
+				{
+					a
+					{
+						font-size : 25px;
+						color : white;
+					}
+					.fb-link
+					{
+						margin-top : 6px;
+						margin-left: 10px;
+						transition : margin-top 1s;
+					}
+					.tw-link
+					{
+						margin-top : 6px;
+						margin-left: 10px;
+						transition : margin-top 1s;
+					}
+					.g-link
+					{
+						margin-top : 6px;
+						margin-left: 10px;
+						transition : margin-top 1s;
+					}
+					.fb-link:hover
+					{
+						margin-top : -5px;
+						//color : $col15;
+					}
+					.tw-link:hover
+					{
+						margin-top : -5px;
+						//color : $col16;
+					}
+					.g-link:hover
+					{
+						margin-top : -5px;
+						//color : $col17;
+					}
+				}
+			}
+		}
+	}
+}
+.stars
+{
+	width : 100%;
+	height : 730px;
+	background-color : $col7;
+	padding : 30px;
+	text-align : center;
+	img
+	{
+		border-radius : 50%;
+	}
+	.card
+	{
+		border-radius : 5px;		
+		border : 2px solid $col2;
+		background-color : #4d2600;
+		margin-top : 10px;
+		margin-bottom : 40px;
+		color : $col2;
+		text-align : center;
+		word-wrap : normal;
+	}
+	.card1
+	{
+		border-radius : 5px;		
+		border : 2px solid $col2;
+		background-color : #4d2600;
+		margin : 10px;
+		color : $col2;
+		text-align : center;
+		word-wrap : normal;
+	}
+}
+.mid
+{
+	width : 100%;
+	height : 850px;
+	background-image : url("../assets/img/background.jpg");
+	background-size : 100% 100%;
+}
+.col-md-2
+{
+	padding-left : 30px;
+}
+
+/*.foot
+{
+	padding-top : 5px;
+	text-align : center;
+	color : $col2;
+	font-size : 13px;
+	background : linear-gradient($col13, $col14);
+	height : 30px;
+}*/
+
+/*Footer*/
+body
+{
+	background : linear-gradient(to right,#990099,#cc3399,#b30000,#b32d00,#cc5200);
+	padding-top : 35px;
+	position : relative;
+}
+.main
+{
+	width : 100%;
+	height : 500px;
+	padding : 15px;
+	background-color :  #4d0019;
+}
+h4
+{
+	color : white;
+}
+.col1
+{
+	padding-top : 15px;
+}
+.f
+{
+	margin-top : 30px;
+}
+.col
+{
+	color : #ff66a3;
+	width : 300px;
+	left : 0px;
+	font-size : 18px;
+}
+.but
+{
+	margin-left : 14px;
+	background : maroon;
+	color : white;
+	position : absolute;	
+}
+.dbl
+{
+	color : white;
+	margin-bottom : 0px;
+}
+.addr
+{
+	margin-bottom : 0;
+	color : #ff66a3;
+	font-size : 18px;
+}
+.a1
+{
+	color : white;
+	font-size : 16px;
+}
+.b1
+{
+	margin-top : 30px;
+	margin-bottom : 55px;
+	width : 300px;
+	height : 70px;
+}
+.links
+{
+	margin-top : 30px;
+}
+.l1
+{
+	margin-left : 0px;
+	width : 230px;
+	height : 35px;
+	background : maroon;
+	margin-bottom : 15px;
+	border-radius : 5px;
+	color : white;
+	padding : 5px 0px 5px 10px;
+}
+.g1
+{
+	color : white;
+}
+.webmaster
+{
+	left : 0;
+	margin-top : 60px;
+	margin-bottom : 50px;
+}
+.a2
+{
+	margin-top : 30px;
+	color : white;
+	line-height: 35px;
+}
+.footer
+{
+	color : white;
+	text-align : center;
+	font-size : 12px;
+}

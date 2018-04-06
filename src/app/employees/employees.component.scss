@@ -1,0 +1,44 @@
+$col1 : #47476b;
+$col2 : white;
+$col3 : black;
+$col4 : transparent;
+$col5 : #e6ffe6;
+$col6 : #ffffb3;
+$col7 : navy;
+$col8 : #e6e6ff;
+h2
+{
+	text-align : center;
+	margin-top : 6px;
+	margin-bottom : 55px;
+	color : $col8;
+	text-decoration : underline;
+}
+th
+{
+	color : $col2;
+	font-size : 18px;
+}
+table
+{
+	border-top : 2px solid $col3;
+	color : $col6;
+}
+td
+{
+	font-size : 16px;
+	color : $col6;
+}
+.ddd
+{
+	width : 910px;
+	height : auto;
+	border : 3px solid $col3;
+	border-radius : 12px;
+	padding : 20px;
+	margin : 40px 100px 30px 230px;
+	background-color : $col4;
+	color : $col3;
+	font-weight : bold;
+	position : absolute;
+}

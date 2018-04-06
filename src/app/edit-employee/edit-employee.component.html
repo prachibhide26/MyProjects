@@ -1,0 +1,44 @@
+<div class = "dd">
+	<h2>Edit Employee</h2>
+	<form method = "post" #empForm = "ngForm"  (ngSubmit)="onSubmit(employees, empForm)">
+		<div class = "row">
+			<div class = "col-sm-6">
+				First Name : <input type = "text" [class.invalid] = "yname.touched && yname.invalid" name = "fname" class = "form-control" pattern = "[a-zA-Z]+" [(ngModel)] = "employees.fname" #yname = "ngModel" (change) = "getModel(yname)" required>
+				<div *ngIf = "yname.touched && yname.invalid">
+					<span *ngIf = "yname.errors.required">Please enter 'First Name'.</span>
+					<span *ngIf = "yname.errors.pattern">Invalid 'Last Name'</span>
+				</div>
+			</div>
+			<div class = "col-sm-6">
+				Last Name : <input type = "text" [class.invalid] = "xname.touched && xname.invalid" name = "lname" class = "form-control" [(ngModel)] = "employees.lname" pattern = "[a-zA-Z]+" #xname = "ngModel" required>
+				<div *ngIf = "xname.touched && xname.invalid">
+					<span *ngIf = "xname.errors.required">Please enter 'Last Name'.</span>
+					<span *ngIf = "xname.errors.pattern">Only alphabets are accepted.</span>
+				</div>
+			</div>
+		</div><br>
+		<div class = "row">
+			<div class = "col-sm-6">
+				Email ID : <input type = "email" name = "email" [class.invalid] = "xname.touched && xname.invalid" class = "form-control" [(ngModel)] = "employees.email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" #em = "ngModel" required>
+				<div *ngIf = "em.touched && em.invalid">
+					<span *ngIf = "em.errors.required">Email ID is required!</span>
+					<span *ngIf = "em.errors.pattern">Invalid Email ID.</span>
+					<span *ngIf = "em.errors.pattern">Invalid Email ID</span>
+				</div>
+			</div>
+			<div class = "col-sm-6">
+				Contact no. : <input type = "text" name = "contact" class = "form-control" [class.invalid] = "cnt.touched && cnt.invalid" [(ngModel)] = "employees.contact" pattern = '/(7|8|9)\d{10}$/' #cnt = "ngModel" required>
+				<div *ngIf = "cnt.touched && cnt.invalid">
+					<span *ngIf = "cnt.errors.required">Email ID is required!</span>
+					<span *ngIf = "cnt.errors.pattern">Invalid Contact number.</span>
+				</div>
+			</div>
+		</div><br>
+		Designation : <input type = "text" name = "desg" class = "form-control" [class.invalid] = "des.touched && des.invalid" [(ngModel)] = "employees.desg" #des = "ngModel" required><br>
+		
+		Address : <textarea type = "text" rows = "4" name = "addr" class = "form-control" [class.invalid] = "ad.touched && ad.invalid" [(ngModel)] = "employees.addr" #ad = "ngModel" required></textarea>
+		
+		<br><br><button type = "submit" class = "btn btn-primary bt">Submit</button>
+	</form>
+</div>
+
